@@ -1,0 +1,10 @@
+{
+  "name": "focus-finder",
+  "description": "Find occurrences of focus: true in the code.",
+  "maintainer": {
+    "name": "Renan Campos",
+    "email": "renan@wearebrane.com"
+  },
+  "languages" : ["Ruby"],
+  "spec_version": "0.0.1"
+}

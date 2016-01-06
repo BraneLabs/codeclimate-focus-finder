@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+var FocusFinder = require('../lib/focus-finder');
+var focusFinder = new FocusFinder();
+
+focusFinder.runEngine();
