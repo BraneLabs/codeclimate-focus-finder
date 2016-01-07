@@ -1,6 +1,6 @@
 # Code Climate focus-finder Engine
 
-`codeclimate-focus-finder` is a Code Climate engine to find occurrences of `focus: true` in your specs.
+`codeclimate-focus-finder` is a Code Climate engine to find occurrences of `focus: true` in your specs. The engine will only detect if the occurrence is found in a `describe`, `context` or `it` block.
 
 You can run it on your command line using the Code Climate CLI
 
@@ -16,7 +16,7 @@ Clone the project and run `docker build -t codeclimate/codeclimate-focus-finder 
 This will build a `codeclimate/codeclimate-focus-finder` image locally
 
 ### Configuration
-To enable `codeclimate-focus-finder` in your project, add the proper configurantion in your `.codeclimate.yml` to enable the engine. A `paths` configurantion must be specified. 
+To enable `codeclimate-focus-finder` in your project, add the proper configurantion in your `.codeclimate.yml` to enable the engine. A `paths` configurantion must be specified.
 
 The engine will only analyze paths specified in this configuration. Since it's intended to analyze only spec files, this engine will ignore the default `included_paths` configuration. Usually these files are excluded for others engine's analysis.
 
@@ -28,7 +28,7 @@ engines:
     enabled: true
     config:
       paths:
-        - spec/**/*
+        - spec/**/*.rb
 ```
 
 ### Usage
